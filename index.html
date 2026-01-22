@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skiibba Stitchez</title>
+  <title>Luxury Tailor | Skiibba Stitchez</title>
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
 
-  <!-- Font Awesome for icons -->
+  <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- Your CSS -->
+  <!-- Main CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -40,7 +40,7 @@
 
   <!-- HERO SECTION -->
   <section class="hero">
-    <img src="images/hero.jpg" alt="Skiibba" class="hero-img">
+    <img src="images/hero.jpg" alt="Skiibba Couture" class="hero-img">
     <div class="hero-content">
       <h2>Where Craftsmanship Meets Style</h2>
       <p>Every stitch tells a story of precision and art.</p>
@@ -48,26 +48,39 @@
     </div>
   </section>
 
-  <!-- COLLECTIONS GRID -->
-  <section class="collections" id="collections">
+  <!-- COLLECTIONS PREVIEW -->
+  <section class="collections-page">
     <h2>Our Collections</h2>
     <div class="collections-grid">
+
       <div class="collection-card">
         <img src="images/men6.jpg" alt="Men Fashion">
-        <h3>Men’s Wear</h3>
+        <div class="collection-info">
+          <h3>Men’s Wear</h3>
+        </div>
       </div>
+
       <div class="collection-card">
         <img src="images/men4.jpg" alt="Men Fashion">
-        <h3>Men’s Wear</h3>
+        <div class="collection-info">
+          <h3>Men’s Wear</h3>
+        </div>
       </div>
+
       <div class="collection-card">
-        <img src="images/men7.jpg" alt="Men Fashion">
-        <h3>Men’s Wear</h3>
+        <img src="images/men7.jpg" alt="Amazing Designs">
+        <div class="collection-info">
+          <h3>Amazing Designs</h3>
+        </div>
       </div>
+
       <div class="collection-card">
-        <img src="images/men2.jpg" alt="Men Fashion">
-        <h3>Men’s Wear</h3>
+        <img src="images/men2.jpg" alt="Unique Designs">
+        <div class="collection-info">
+          <h3>Unique Designs</h3>
+        </div>
       </div>
+
     </div>
   </section>
 
@@ -85,15 +98,26 @@
     <h2>Contact Us</h2>
     <p><i class="fas fa-envelope"></i> Email: skiibbastitchez@gmail.com</p>
     <p><i class="fab fa-whatsapp"></i> WhatsApp: +2349063294074</p>
+
+    <!-- Social Icons -->
     <div class="socials">
       <a href="https://www.facebook.com/uche.nna.689685" target="_blank"><i class="fab fa-facebook-f"></i></a>
       <a href="https://www.instagram.com/uche_anioke" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="https://www.tiktok.com/@skiibba0" target="_blank"><i class="fab fa-tiktok"></i></a>
     </div>
+
     <p>© 2026 Skiibba Stitchez. All rights reserved.</p>
   </footer>
 
   <!-- JS -->
-  <script src="script.js"></script>
+  <script>
+    function toggleMenu() {
+      const menuBtn = document.querySelector('.menu-btn');
+      const navLinks = document.getElementById('nav-links');
+
+      menuBtn.classList.toggle('active');   // Animate bars
+      navLinks.classList.toggle('active');  // Show/hide menu
+    }
+  </script>
 </body>
 </html>
