@@ -93,6 +93,14 @@
   </footer>
 
   <!-- JS -->
-  <script src="script.js"></script>
+  <script>
+    function toggleMenu() {
+      const menuBtn = document.querySelector('.menu-btn');
+      const navLinks = document.getElementById('nav-links');
+
+      menuBtn.classList.toggle('active');   // Animate bars
+      navLinks.classList.toggle('active');  // Show/hide menu
+    }
+  </script>
 </body>
 </html>
