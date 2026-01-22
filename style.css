@@ -174,11 +174,12 @@ header h1 {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
   border: 1px solid #20284B;
   text-align: center;
-  transition: transform 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .collection-card:hover {
   transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
 .collection-card img {
@@ -190,6 +191,11 @@ header h1 {
 
 .collection-card h3 {
   margin: 10px 0 5px 0;
+  color: #20284B;
+}
+
+.collection-card p {
+  font-size: 14px;
   color: #20284B;
 }
 
