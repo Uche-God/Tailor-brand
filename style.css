@@ -264,20 +264,26 @@ footer p {
   font-size: 14px;
   color: #CBD5E1;
 }
-
+/* ================= SOCIAL ICONS ================= */
 .socials {
   margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* space between icons */
 }
 
 .socials a {
-  color: #D4AF37;
-  font-size: 18px;
-  margin: 0 10px;
+  color: #D4AF37;       /* Gold color */
+  font-size: 26px;      /* Bigger icons, same as email/WhatsApp */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: transform 0.3s ease;
 }
 
 .socials a:hover {
   transform: scale(1.2);
+  color: #F8FAFC;       /* Highlight on hover */
 }
 
 /* ================= WHATSAPP FLOAT ================= */
