@@ -15,7 +15,7 @@ body {
 /* ================= HEADER / NAVBAR ================= */
 header {
   background-color: #0F172A;
-  padding: 20px 30px; /* more padding for logo visibility */
+  padding: 20px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,23 +24,11 @@ header {
   z-index: 1000;
 }
 
-/* Logo container for image + site name */
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 12px; /* space between logo and text */
-}
-
-.logo-container img {
-  max-height: 20px; /* adjust size of your logo */
-  display: circle;
-}
-
 header h1 {
-  font-size: 28px;           
+  font-size: 28px;
   font-weight: 700;
   color: #D4AF37; /* Gold */
-  white-space: nowrap;       /* keep logo text on one line */
+  white-space: nowrap;
 }
 
 /* Hamburger Button */
@@ -48,8 +36,8 @@ header h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 35px; 
-  height: 25px; 
+  width: 35px;
+  height: 25px;
   background: none;
   border: none;
   cursor: pointer;
@@ -112,24 +100,31 @@ header h1 {
   color: #D4AF37;
 }
 
-/* ================= HERO SECTION ================= */
+/* ================= HERO ================= */
 .hero {
-  padding: 60px 20px 40px 20px; /* more top padding for logo + menu */
   text-align: center;
+  padding: 50px 20px 40px 20px;
   max-width: 1000px;
   margin: auto;
 }
 
+.hero-logo {
+  display: block;
+  margin: 0 auto 25px auto;
+  max-width: 120px; /* smaller than hero image */
+  height: auto;
+}
+
 .hero-img {
   width: 100%;
-  max-width: 400px; /* increase to show full image */
+  max-width: 300px; /* hero image bigger than logo */
   border-radius: 18px;
   margin-bottom: 25px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 
 .hero-content h2 {
-  font-size: 28px; /* bigger headline */
+  font-size: 28px;
   margin-bottom: 10px;
   color: #F8FAFC;
 }
@@ -141,7 +136,7 @@ header h1 {
 }
 
 .hero-content button {
-  padding: 12px 28px; /* bigger button */
+  padding: 12px 28px;
   border: none;
   border-radius: 12px;
   background-color: #D4AF37;
@@ -291,7 +286,7 @@ footer p {
 
 .socials a {
   color: #D4AF37;
-  font-size: 30px;  /* bigger icons for email & socials */
+  font-size: 26px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -352,26 +347,22 @@ section {
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
   header h1 {
-    font-size: 22px;
-  }
-
-  .logo-container img {
-    max-height: 50px;
+    font-size: 24px;
   }
   
+  .hero-logo {
+    max-width: 100px;
+  }
+
   .hero-img {
-    max-width: 280px;
+    max-width: 250px;
   }
   
   .hero-content h2 {
-    font-size: 20px;
+    font-size: 22px;
   }
   
   .hero-content p {
     font-size: 14px;
-  }
-  
-  .hero-content button {
-    padding: 10px 22px;
   }
 }
