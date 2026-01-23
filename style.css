@@ -32,8 +32,8 @@ header {
 }
 
 .logo-container img {
-  max-height: 30px; /* adjust size of your logo */
-  display: block;
+  max-height: 20px; /* adjust size of your logo */
+  display: circle;
 }
 
 header h1 {
